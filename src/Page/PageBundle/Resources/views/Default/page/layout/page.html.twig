@@ -1,0 +1,11 @@
+
+{% extends 'layout/layout.html.twig' %}
+
+{% block body %}
+
+<div class="container">
+	<h1>{{ page.titre }}</h1>
+
+		{{ page.contenu | raw}}
+</div>
+    {% endblock %}

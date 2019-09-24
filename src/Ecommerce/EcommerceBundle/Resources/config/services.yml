@@ -1,0 +1,9 @@
+services:
+    tva:
+      class : Ecommerce\EcommerceBundle\Twig\TvaExtension
+      tags : 
+        - { name : twig.extension }
+
+# Fixtures services
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\MediaFixtures:
+        tags: [doctrine.fixture.orm]
